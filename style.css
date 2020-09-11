@@ -5,19 +5,20 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     background-image: url();
     background-size: cover;
     background-position: top center;
     justify-content: center;
+    font-size: 100%;
 }
 
 .app-wrap{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    background-image: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
 }
 
 header{
@@ -37,7 +38,7 @@ header input{
     border-radius: 5px;
     border-bottom: 3px solid #916822;
     color: #313131;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 300;
     transition: 0.2s ease-out;
 }
@@ -56,8 +57,8 @@ main{
 
 .location .city{
     font-style: italic;
-    color: white;
-    font-size: 32px;
+   
+    font-size: 2em;
     font-weight: bold;
     text-shadow: 3px 3px rgba(50, 30, 70, 0.5);
     
@@ -65,20 +66,35 @@ main{
 
 .location .date{
     color: white;
-    font-size: 16px;
+    font-size: 1.5em;
+}
+
+.location .pre-lim{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    /* color: rgb(158, 142, 142); */
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.current{
+    margin-top: 4rem;
 }
 
 .current .temp{
     color: white;
-    font-size: 80px;
-    font-weight: 900;
+    font-size: 2em;
+    
     margin: 30px 0px;
-    text-shadow: 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .current .weather{
     color: white;
-    font-weight: 700;
+    font-size: 2em;
     font-style: italic;
     margin-bottom: 15px;
 
@@ -86,10 +102,26 @@ main{
 
 .current .hi-low{
     color: white;
-    font-style: 24px;
+    font-size: 2em;
     font-weight: 500;
     text-shadow: 0 2px rgba(0, 0, 0, 0.4);
 
 }
 
+.current .pre-lim{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* color: rgb(158, 142, 142); */
+}
 
+
+@media (max-width:500px){
+    body{
+        font-size: 50%;
+    }
+}
